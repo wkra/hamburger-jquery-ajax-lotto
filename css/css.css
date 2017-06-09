@@ -1,0 +1,54 @@
+section>nav:hover{
+	cursor: pointer;
+}
+nav>h3{
+	display: inline-block;
+}
+.myInput{
+	width: 50%
+}
+
+/* myHamburger */
+.myHamburger{
+    width: 24px;
+    height: 21px;
+    border: 0;
+    border-top: 3px solid #000000;
+    background: transparent;
+    position: relative;
+    transition: 0.3s all linear;
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.myHamburger::before, .myHamburger::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid #000000;
+    transform: translateY(10px);
+}
+
+.myHamburger::after{
+    transform: translateY(25px);
+    transition: 0.3s all linear;
+	top: -9px;
+}
+
+section>nav:hover .myHamburger{
+/*   transform to X
+	transform: rotate(45deg) translateY(5px);
+    border-top: 3px solid transparent;
+*/  
+	transform: rotate(180deg);
+    border-top: 3px solid;
+}
+
+section>nav:hover .myHamburger::after {
+/*    transform to X
+	transform: rotate(-90deg) translateX(-15px); 
+*/
+}
+/* /myHamburger */ 
