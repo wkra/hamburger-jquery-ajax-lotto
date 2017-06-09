@@ -90,7 +90,7 @@ $(document).ready(function() {
     var lotto = document.createElement('script');
         lotto.type = 'text/javascript';
         lotto.async = true;
-        lotto.src = 'script/lotto.js';
+        lotto.src = '../script/lotto.js';
 
     var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(lotto, s);
