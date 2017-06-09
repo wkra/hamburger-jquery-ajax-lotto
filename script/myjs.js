@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	// html
 	$("body").prepend('<div class="container"></div>');
-	$(".container").append('<h1>jQuery2</h1>');
+	$(".container").append('<h1>jQuery + ajax + hamburger + lotto</h1>');
 	$(".container").append('<section class="first"></section>');
 	$(".container").append('<section class="second"></section>');
 	$(".container").append('<section class="third"></section>');
