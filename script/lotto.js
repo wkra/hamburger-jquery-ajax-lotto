@@ -7,10 +7,12 @@ var lottoModule = (function () {
     var yourNum = function (){
         var yourNumbers = [];
         	while (yourNumbers.length<6){
+//			for (i=0;i<6;i++){
     	    var i = yourNumbers.length;
     	    var flag = true;
+			var nameOfNum = ["pierwszą", "drugą", "trzecią", "czwartą", "piątą", "szóstą"];
     	    
-    	    yourNumber = (prompt("Podaj liczbę od 1 do 49"));
+    	    yourNumber = (prompt("Podaj " + nameOfNum[i] + " liczbę od 1 do 49"));
     	    
     	    if (yourNumber === null){
     	        flag = false;
