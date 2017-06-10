@@ -52,7 +52,7 @@ $(document).ready(function() {
 	});
 	
 	// load first ajax page
-	$(".innerHTML").load("plik1.txt");
+	$(".innerHTML").load("file1.txt");
 
 
 	// input value
