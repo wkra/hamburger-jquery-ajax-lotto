@@ -35,11 +35,13 @@ $(document).ready(function() {
 	
 		// btns
 	for (i=0;i<4;i++){
-		var files = ["file1.txt", "file2.php", "file3.html", "file4.xml"];
-		var btn1 = '<button class="btn btn-primary myBtn" href="';
-		var btn2 = '">Button</button>';
-
+		var files = ["plik1.txt", "plik2.php", "plik3.html", "plik4.xml"];
+		var btn1 = '<button class="btn btn-primary myBtn" href="'
+		var btn2 = '">Button</button>'
+		var btn11 = '<button class="btn btn-primary myBtn'
+		var btn22 = '">Button</button>'
 		$(".btn-group").append(btn1 + (files[i]) + btn2);
+		//$(".btn-group").append(btn11 + btn22);
 	}
 	
 	// /html

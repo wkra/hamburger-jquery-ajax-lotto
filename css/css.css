@@ -1,11 +1,10 @@
-section>nav:hover{
+section>h3:hover{
+	text-decoration:underline;
 	cursor: pointer;
+
 }
 nav>h3{
 	display: inline-block;
-}
-.myInput{
-	width: 50%
 }
 
 /* myHamburger */
@@ -37,18 +36,13 @@ nav>h3{
 	top: -9px;
 }
 
-section>nav:hover .myHamburger{
-/*   transform to X
-	transform: rotate(45deg) translateY(5px);
+.myHamburger:hover {
+    transform: rotate(45deg) translateY(5px);
     border-top: 3px solid transparent;
-*/  
-	transform: rotate(180deg);
-    border-top: 3px solid;
+    
 }
 
-section>nav:hover .myHamburger::after {
-/*    transform to X
-	transform: rotate(-90deg) translateX(-15px); 
-*/
+.myHamburger:hover::after {
+    transform: rotate(-90deg) translateX(-15px);
 }
 /* /myHamburger */ 
