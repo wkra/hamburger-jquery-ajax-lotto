@@ -5,6 +5,7 @@ var lottoModule = (function () {
     
     //Twoje numery
     var yourNum = function (){
+		alert("wpisz kolejno 6 liczb od 1 do 49.")
         var yourNumbers = [];
         	while (yourNumbers.length<6){
 //			for (i=0;i<6;i++){
