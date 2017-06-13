@@ -24,8 +24,8 @@ $(document).ready(function() {
 	$(".second").append("<nav></nav>")
 	$(".second nav").append('<h3>jQuery ajax</h3>');
 	$(".second").append("<article></article>");
-	$(".second article").append('<nav></nav>');
-	$(".second article nav").append('<div class="btn-group"></div>')
+	$(".second article").append('<div class="secArtBtn"></div>');
+	$(".second article .secArtBtn").append('<div class="btn-group"></div>')
 	$(".second article").append('<br>');
 	$(".second article").append('<div class="innerHTML""></div>');
 	$(".second article").append('<div class="adjacentHTML"></div>')
@@ -78,8 +78,11 @@ $(document).ready(function() {
 	// hide section
 	$("article").hide();
 	$("nav").click(function(){
-		$(this).next("article").slideToggle();
-		return false;
+		console.log($("article").not($(this).next("article")).length)
+		$("article").not($(this).next("article")).removeClass("opened");
+		$("article").slideUp();
+		$(this).next("article").not(".opened").slideDown();
+		$(this).next("article").toggleClass("opened");
 	});
 
 	// hamburger
