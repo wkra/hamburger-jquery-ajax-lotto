@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	//creating html - for practice
+	
 	// html
 	$("body").prepend('<div class="container"></div>');
 	$(".container").append('<h1>jQuery + ajax + hamburger + lotto</h1>');
@@ -12,7 +14,7 @@ $(document).ready(function() {
 	$(".first nav").append($("<h3></h3>").text("Formularz"));
 	$(".first").append('<article></article>')
 	$(".first article").append('<form class="myform"></form>');
-	$(".myform").append('<input class="form-control myInput type="text" placeholder="wpisz text">')
+	$(".myform").append('<input class="form-control myInput" type="text" placeholder="wpisz text">')
 	$(".first article").append("<br>");
 	$(".first article").append('<div class="myInput1"><p></p></div>')
 	$(".first article").append('<div class="myInput2"><p></p></div>')
@@ -55,14 +57,14 @@ $(document).ready(function() {
 		//$(".innerHTML").load("file1.txt");
 
 
-	// input value
-	setInterval(function(){
+	// input value event
+	myInput = document.querySelector(".myInput");
+	myInput.addEventListener("keyup", function(){
 		var myVal = $('.myInput').val();
 		$(".myInput1 p").text(myVal);
 		$(".myInput2 p").text(reverse(myVal));
+	});
 		
-	}, 500);
-	
 	function reverse (a){
 		var b = "";
 		if (a.length>0){
