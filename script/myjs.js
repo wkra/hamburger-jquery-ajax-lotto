@@ -78,7 +78,6 @@ $(document).ready(function() {
 	// hide section
 	$("article").hide();
 	$("nav").click(function(){
-		console.log($("article").not($(this).next("article")).length)
 		$("article").not($(this).next("article")).removeClass("opened");
 		$("article").slideUp();
 		$(this).next("article").not(".opened").slideDown();
